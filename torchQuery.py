@@ -22,7 +22,7 @@ def deviceQuery(devid):
     mem_free =  mem_info[0] / (1024 * 1024.)
     mem_used = mem_total - mem_free
 
-    print(f"{s_time}: [{devid} {props.name} {props.gcnArchName}] {mem_total:5.1f} {mem_used: 5.1f} {mem_free: 5.1f}", flush=True)
+    print(f"{s_time} [{devid}: {props.name} {props.gcnArchName}] {mem_total:.1f} {mem_used:.1f} {mem_free:.1f}", flush=True)
 
 
 if __name__ == "__main__":
